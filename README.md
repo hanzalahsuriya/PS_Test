@@ -28,3 +28,9 @@ https://localhost:5001/countries/{code} i.e. https://localhost:5001/GBP
 
 UI preview:
 ![alt text](https://github.com/hanzalahsuriya/PS_Test/blob/master/1.JPG)
+
+![alt text](https://github.com/hanzalahsuriya/PS_Test/blob/master/2.JPG)
+
+![alt text](https://github.com/hanzalahsuriya/PS_Test/blob/master/3.JPG)
+
+![alt text](https://github.com/hanzalahsuriya/PS_Test/blob/master/4.JPG)
