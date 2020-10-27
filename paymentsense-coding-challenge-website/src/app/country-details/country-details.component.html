@@ -1,0 +1,103 @@
+<div class="jumbotron">
+  <div class="row">
+    <a [routerLink]="['/country-list']">back</a>
+  </div>
+  <div class="row">
+    <h2>{{ country.name }}</h2>
+  </div>
+
+  <div class="row">
+    <img [src]="country.flag" width="250" />
+  </div>
+  <div class="row">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Capital</td>
+          <td>{{ country.capital }}</td>
+        </tr>
+        <tr>
+          <td>Region</td>
+          <td>{{ country.region }}</td>
+        </tr>
+        <tr>
+          <td>Sub Region</td>
+          <td>{{ country.subregion }}</td>
+        </tr>
+
+        <tr>
+          <td>Alpha 2 Code</td>
+          <td>{{ country.alpha2Code }}</td>
+        </tr>
+        <tr>
+          <td>Alpha 3 Code</td>
+          <td>{{ country.alpha3Code }}</td>
+        </tr>
+        <tr>
+          <td>Top Level Domains</td>
+          <td>
+              <div *ngFor="let tld of country.topLevelDomain">
+                {{ tld }}
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Population</td>
+          <td>{{ country.population }}</td>
+        </tr>
+        <tr>
+          <td>Gini</td>
+          <td>{{ country.gini }}</td>
+        </tr>
+        <tr>
+          <td>Calling Codes</td>
+          <td>
+              <div *ngFor="let callingCode of country.callingCodes">
+                {{ callingCode }}
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Time Zones Codes</td>
+          <td>
+              <div *ngFor="let timezone of country.timezones">
+                {{ timezone }}
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Currencies</td>
+          <td>
+              <div *ngFor="let currency of country.currencies">
+                <div>Code: {{ currency.code }}</div>
+                <div>Name: {{ currency.name }}</div>
+                <div>Symbol: {{ currency.symbol }}</div>
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Borders</td>
+          <td>
+              <div *ngFor="let border of country.borders">
+                {{ border }}
+              </div>
+          </td>
+        </tr>
+        <tr>
+          <td>Languages</td>
+          <td>
+              <div *ngFor="let language of country.languages">
+                <div>ISO639_1: {{ language.iso639_1 }}</div>
+                <div>ISO639_2: {{ language.iso639_2 }}</div>
+                <div>Name: {{ language.name }}</div>
+                <div>Native Name: {{ language.nativeName }}</div>
+
+              </div>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+</div>
