@@ -18,3 +18,10 @@ Ports:
      - Outbox for events
 
 For CQRS implementations, I would have used: https://github.com/jbogard/MediatR
+
+
+In this current implementation, I am using IDistributedCache and in appsettings there is a value which defines for how to keep this data cached.
+
+There are two api endpoints: 
+https://localhost:5001/countries
+https://localhost:5001/countries/{code} i.e. https://localhost:5001/GBP
