@@ -25,3 +25,6 @@ In this current implementation, I am using IDistributedCache and in appsettings 
 There are two api endpoints: 
 https://localhost:5001/countries
 https://localhost:5001/countries/{code} i.e. https://localhost:5001/GBP
+
+UI preview:
+![alt text](https://github.com/hanzalahsuriya/PS_Test/blob/master/1.JPG)
